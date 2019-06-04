@@ -2,6 +2,12 @@
 date color #3498db
 h2 color #2c3e50
 font: source sans pro*/
+
+body {
+    padding-top: 70px;
+}
+
+
 .blog {
 	border: 20px solid #bdc3c7;
 

@@ -1,119 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Word Grabber</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Landing Page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400, 700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="galleryGrid.css">
+	<link rel="stylesheet" type="text/css" href="landingPage.css">
 </head>
 <body>
-	<h1>Word Grabber</h1>
-	<h2>Hello World</h2>
-	<h2>Please Enter Some Words</h2>
-	<h2>Enter <strong>'done'</strong> when finished</h2>
-<!-- 	<form action="C:\Users\kcl\Documents\index.html" method="GET"> -->
-	<form id="form1">
-	<label>
-		Your Word:
-		<input type="text" name="name" placeholder="what is your word?" size="20">
-	</label>
-<!-- 	<input type="submit"> -->
-	</form>
-	<button onclick="wordAdder()">Submit</button>
-	<br>
-	<p>Array:</p>
-<script>
-	var array;
-	var a=0;
-//document.getElementById("pArray").innerHTML="Array:" + "<br>";
-function wordAdder(){
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://eetejbd.best"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> EETEJBD</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!-- whatever we put in to thiis navbar-collapse will be put into the hamburger menu when we hit tablet and mobile sizes -->
+      <ul class="nav navbar-nav">   
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+            	<a href="http://www.eetejbd.best/codeCopy.html">Things I've Learned</a>
+            </li>
+            <li>
+            	<a href="http://www.eetejbd.best/recreate.html">Rusty Steele</a>
+            </li>
+            <li>
+            	<a href="http://www.eetejbd.best/table.html">Tables !</a>
+            </li>
+             <li>
+            	<a href="http://www.eetejbd.best/pokemonTable.html">Pokemon Chart</a>
+            </li>
+             <li>
+            	<a href="http://www.eetejbd.best/inputs.html">Inputs!</a>
+            </li>
+            <li role="separator" class="divider"></li>
+            <li>
+            	<a href="http://www.eetejbd.best/cssIntro.html">CSS Intro</a></li>
+            <li>
+            	<a href="http://www.eetejbd.best/ticTacToe.html">Tic Tac Toe</a>         
+			 </li>
+             <li>
+            	<a href="http://www.eetejbd.best/cssBlog.html">CSS Blog</a>  
+            </li>
+            <li>
+            	<a href="http://www.eetejbd.best/photogrid.html">Photo Gallery</a>
+            </li>
+            <li>
+            	<a href="http://www.eetejbd.best/galleryGrid.html">Image Gallery </a>  
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">       
+          <li>
+       	<a href="http://www.eetejbd.best/formProject.html">Register <i class="fa fa-user-plus"></i></a>
+       </li>
+       <li>
+        	<a href="http://www.eetejbd.best/forms.html">Login <i class="fa fa-user"></i></a>
+        </li>
+<!--         <li>
+        	<a href="http://www.eetejbd.best/formsExercise.html">Forms Exercise</a>
+        </li> -->
+     
+      </ul>
 
-	var x , y;
-	x=document.getElementById("form1");
-	y=x.elements["name"].value;
-	array[a++]=y;
-		//while( y !== "done" || y !== "Done" || y !== "DONE"){}
-	//document.getElementById("pArray").innerHTML="<br>" + y;
-	document.getElementById("pArray").innerHTML+="<br>" + y + "<br>";
-	
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- jquery is required and needs to be before the javascipt source  -->
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div id="content">
+				<h1>Landing Page</h1>
+				<h3>This is going to be the first page you see. Welcome!</h3>
+				<hr>
+				<button class="btn btn-default btn-lg">Get Started!</button>
+			</div>
+		</div>
+	</div>
+</div>
 
 
-}
 
-
-</script>
-<p id="pArray"></p>
-
-<a href="http://www.eetejbd.best/codeCopy.html">Things I've Learned</a>
-<a href="http://www.eetejbd.best/recreate.html">Rusty Steele</a>
-<a href="http://www.eetejbd.best/table.html">Tables !</a>
-<a href="http://www.eetejbd.best/pokemonTable.html">Pokemon Chart</a>
-<a href="http://www.eetejbd.best/forms.html">Forms</a>
 
 </body>
-
-
-
-
-
-
-
-
-
-<!-- 
-
-///////////////////////////////////////////////////////////////////////////
-	/*
-function askForWord(){
-	// return prompt("Please enter a word");
-	var x = document.getElementById(wordField);
-	var y = x.elements["wordInput"].value;
-	if (y!==null) {return y;}
-	else return 0;
-	
-}
-function wordAdder(){
- let newWord;
- while(!myArray[0]){
- 	newWord = askForWord();
- 	if(newWord !== "done" && newWord !== "Done" && newWord !== "DONE"){
-	myArray[arraySize-1] = newWord;
-	}
-	else{myArray[0]=true;}
-	arraySize++;
-	document.write(myArray);
-	}
-}
-
-function printArray()
-{
-	let	aSize = arraySize;
-	while(aSize>0){
-		// console.log(myArray[aSize-1]);
-		 // document.write(myArray[aSize-1]);
-		 document.getElementById("printArrayElement").innerHTML+=myArray[aSize-1];
-		aSize--;}return 0;
-}
-document.write("Hello World");
-// console.log("Hello World");
-// console.log("Please enter some words");
-// console.log("enter 'done' when finished");
-/*window.print("Hello World take two");
-window.print("Please enter some words");
-//creat an array and fill it with user input for each element
-var myArray = [false, null];		
-var arraySize = myArray.length;
-document.write(arraySize);
-
-if(myArray !== undefined)
-{ 	 
-	document.write("myArray is defined");
-	wordAdder();
-}
-else
-{ 	console.warn('Array is empty');}
-	printArray(); 
-
-
-*/
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////// -->
 </html>

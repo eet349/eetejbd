@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bootstrap Navbars</title>
-	<link rel="stylesheet" type="text/css" href="Bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Word Grabber</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="galleryGrid.css">
 
 </head>
 <body>
-
-<nav class="navbar navbar-default">
+<!-- Navbar Start -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -17,7 +20,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://eetejbd.best">EETDJBD</a>
+      <a class="navbar-brand" href="http://eetejbd.best"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> EETEJBD</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!-- whatever we put in to thiis navbar-collapse will be put into the hamburger menu when we hit tablet and mobile sizes -->
@@ -42,30 +45,33 @@
             </li>
             <li role="separator" class="divider"></li>
             <li>
-            	<a href="http://www.eetejbd.best/cssIntro.html">CSS Intro</a>
+            	<a href="http://www.eetejbd.best/cssIntro.html">CSS Intro</a></li>
             <li>
             	<a href="http://www.eetejbd.best/ticTacToe.html">Tic Tac Toe</a>         
 			 </li>
+              <li>
+            	<a href="http://www.eetejbd.best/cssBlog.html">CSS Blog</a>  
             </li>
             <li>
             	<a href="http://www.eetejbd.best/photogrid.html">Photo Gallery</a>
             </li>
-            <li>
-            	<a href="http://www.eetejbd.best/cssBlog.html">CSS Blog</a>  
+           <li>
+            	<a href="http://www.eetejbd.best/galleryGrid.html">Image Gallery </a>  
             </li>
           </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">       
-        <li>
-        	<a href="http://www.eetejbd.best/forms.html">Forms</a>
-        </li>
-        <li>
-        	<a href="http://www.eetejbd.best/formsExercise.html">Forms Exercise</a>
-        </li>
-       <li>
-       	<a href="http://www.eetejbd.best/formProject.html">Big Form</a>
+          <li>
+       	<a href="http://www.eetejbd.best/formProject.html">Register <i class="fa fa-user-plus"></i></a>
        </li>
+       <li>
+        	<a href="http://www.eetejbd.best/forms.html">Login <i class="fa fa-user"></i></a>
+        </li>
+<!--         <li>
+        	<a href="http://www.eetejbd.best/formsExercise.html">Forms Exercise</a>
+        </li> -->
+     
       </ul>
 
     </div><!-- /.navbar-collapse -->
@@ -76,5 +82,49 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<!-- nav end -->
+    
+    
+    
+    <div class="container">
+        <div class="jumbotron">
+    
+	<h1>Word Grabber</h1>
+	<h2>Hello World</h2>
+	<h2>Please Enter Some Words</h2>
+	<h2>Enter <strong>'done'</strong> when finished</h2>
+<!-- 	<form action="C:\Users\kcl\Documents\index.html" method="GET"> -->
+	<form id="form1">
+	<label>
+		Your Word:
+		<input type="text" name="name" placeholder="what is your word?" size="20">
+	</label>
+<!-- 	<input type="submit"> -->
+	</form>
+	<button onclick="wordAdder()">Submit</button>
+	<br>
+	<p>Array:</p>
+<script>
+//	var array;
+//	var a=0;
+//document.getElementById("pArray").innerHTML="Array:" + "<br>";
+function wordAdder(){
+
+	var x , y;
+	x=document.getElementById("form1");
+	y=x.elements["name"].value;
+	//array[a++]=y;
+		//while( y !== "done" || y !== "Done" || y !== "DONE"){}
+	//document.getElementById("pArray").innerHTML="<br>" + y;
+	document.getElementById("pArray").innerHTML+="<br>" + y + "<br>";
+
+}
+
+
+</script>
+<p id="pArray"></p>
+            </div>
+        </div>
 </body>
+
 </html>

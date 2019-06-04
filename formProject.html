@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Form Demo</title>
+	<title>Forms Project</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="galleryGrid.css">
 </head>
 <body>
-    
-    <!-- Navbar Start -->
+
+<!-- Navbar Start -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -48,14 +48,14 @@
             	<a href="http://www.eetejbd.best/cssIntro.html">CSS Intro</a></li>
             <li>
             	<a href="http://www.eetejbd.best/ticTacToe.html">Tic Tac Toe</a>         
-			 </li>  
-			 <li>
+			 </li>
+             <li>
             	<a href="http://www.eetejbd.best/cssBlog.html">CSS Blog</a>  
             </li>
             <li>
             	<a href="http://www.eetejbd.best/photogrid.html">Photo Gallery</a>
             </li>
-             <li>
+            <li>
             	<a href="http://www.eetejbd.best/galleryGrid.html">Image Gallery </a>  
             </li>
           </ul>
@@ -84,34 +84,157 @@
 
 <!-- nav end -->
     
-    
-   
+  
     <div class="container">
         <div class="jumbotron">
-     
-<h1>Login</h1>
-<!-- action - where the form sends data to-->
-<!-- method - what HTTP method (get/post) -->
+    
+<h1>Register</h1>
 <form>
-<!-- <form action="http://wikipedia.org" method="GET"> -->
-<div class="form-group">
-    <label>
-    	email:
-    	<input class="form-control" type="email" name = "email" placeholder="email" required>
-    </label>
-</div>
-<div class="form-group">
-    <label>
-    	password:
-    	<input class="form-control" type="password" name = "password" placeholder="password" required>
-    </label>
-</div>
-<input type="Submit">
+	<div>
+	<label for="fName">First Name:</label>
+	<input type="text" name="firstName" id="fName" required placeholder="John">
+	<label for="lName">Last Name:</label>
+	<input type="text" name="lastName" id="lName" required placeholder="Smith">
+	</div>
+	<div>
+	<label for="male">Male</label>
+	<input type="radio" name="gender" id="male">
+	<label for="female">Female</label>
+	<input type="radio" name="gender" id="female">
+	<label for="other">Other</label>
+	<input type="radio" name="gener" id="other">
+	</div>
+	<div>
+	<label for="email">Email:</label>
+	<input type="email" name="email" id="email" required placeholder="email@sample.com">
+	<label for="password">Password:</label>
+	<!-- <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{5,10}$" required placeholder="password"> -->
+	<input type="password" name="password" id="password" pattern=".{5,10}" required  title="Password must be between 5 and 10 characters" placeholder="password">
+	</div>
+	<div>
+	<label for="birthday">
+		Birthday:
+	<select name="month">
+		<option>Month</option>
+		<option>January</option>
+		<option>February</option>
+		<option>March</option>
+		<option>April</option>
+		<option>May</option>
+		<option>June</option>
+		<option>July</option>
+		<option>August</option>
+		<option>September</option>
+		<option>October</option>
+		<option>November</option>
+		<option>December</option>
+	</select>
+	<select name="day">
+		<option>Day</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option>
+		<option>13</option>
+		<option>14</option>
+		<option>15</option>
+		<option>16</option>
+		<option>17</option>
+		<option>18</option>
+		<option>19</option>
+		<option>20</option>
+		<option>21</option>
+		<option>22</option>
+		<option>23</option>
+		<option>24</option>
+		<option>25</option>
+		<option>26</option>
+		<option>27</option>
+		<option>28</option>
+		<option>29</option>
+		<option>30</option>
+		<option>31</option>
+	</select>
+	<select name="year"> <!-- Years 1960-2019 -->
+		<option>Year</option>
+		<option>2019</option>
+		<option>2018</option>
+		<option>2017</option>
+		<option>2016</option>
+		<option>2015</option>
+		<option>2014</option>
+		<option>2013</option>
+		<option>2012</option>
+		<option>2011</option>
+		<option>2010</option>
+		<option>2009</option>
+		<option>2008</option>
+		<option>2007</option>
+		<option>2006</option>
+		<option>2005</option>
+		<option>2004</option>
+		<option>2003</option>
+		<option>2002</option>
+		<option>2001</option>
+		<option>2000</option>
+		<option>1999</option>
+		<option>1998</option>
+		<option>1997</option>
+		<option>1996</option>
+		<option>1995</option>
+		<option>1994</option>
+		<option>1993</option>
+		<option>1992</option>
+		<option>1991</option>
+		<option>1990</option>
+		<option>1989</option>
+		<option>1988</option>
+		<option>1987</option>
+		<option>1986</option>
+		<option>1985</option>
+		<option>1984</option>
+		<option>1983</option>
+		<option>1982</option>
+		<option>1981</option>
+		<option>1980</option>
+		<option>1979</option>
+		<option>1978</option>
+		<option>1977</option>
+		<option>1976</option>
+		<option>1975</option>
+		<option>1974</option>
+		<option>1973</option>
+		<option>1972</option>
+		<option>1971</option>
+		<option>1970</option>
+		<option>1969</option>
+		<option>1968</option>
+		<option>1967</option>
+		<option>1966</option>
+		<option>1965</option>
+		<option>1964</option>
+		<option>1963</option>
+		<option>1962</option>
+		<option>1961</option>
+		<option>1960</option>
+	</select>
+	
+	</label></div>
+	<div>
+	<label for="agree">I agree to the term and conditions</label>
+	<input type="checkbox" name="agree" id="agree" required>
+	</div>
+	<button type="submit">Submit</button>
 </form>
-<!--<img src="C:\Users\kcl\Documents\IMG_0256.png">-->
 </div>
 </div>
-
-
 </body>
 </html>

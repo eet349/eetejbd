@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Landing Page</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Lato:400, 700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="galleryGrid.css">
-	<link rel="stylesheet" type="text/css" href="landingPage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tic Tac Toe Project</title>
+	<link rel="stylesheet" type="text/css" href="ticTacToe.css">
+		<title>Word Grabber</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    	<link rel="stylesheet" type="text/css" href="galleryGrid.css">
 </head>
 <body>
+    
+    <!-- Navbar Start -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -19,7 +22,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://eetejbd.best"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> EETDJBD</a>
+      <a class="navbar-brand" href="http://eetejbd.best"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> EETEJBD</a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!-- whatever we put in to thiis navbar-collapse will be put into the hamburger menu when we hit tablet and mobile sizes -->
@@ -48,12 +51,14 @@
             <li>
             	<a href="http://www.eetejbd.best/ticTacToe.html">Tic Tac Toe</a>         
 			 </li>
-            
+             <li>
+            	<a href="http://www.eetejbd.best/cssBlog.html">CSS Blog</a>  
+            </li>
             <li>
             	<a href="http://www.eetejbd.best/photogrid.html">Photo Gallery</a>
             </li>
             <li>
-            	<a href="http://www.eetejbd.best/cssBlog.html">CSS Blog</a>  
+            	<a href="http://www.eetejbd.best/galleryGrid.html">Image Gallery </a>  
             </li>
           </ul>
         </li>
@@ -79,21 +84,34 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+<!-- nav end -->
+    
+    
+    
 <div class="container">
-	<div class="row">
-		<div class="col-lg-12">
-			<div id="content">
-				<h1>Landing Page</h1>
-				<h3>This is going to be the first page you see. Welcome!</h3>
-				<hr>
-				<button class="btn btn-default btn-lg">Get Started!</button>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
+    <div class="jumbotron">
+    
+    	<h1>Tic Tac Toe</h1>
+    	<table>
+    	
+    		<tr>
+    			<td></td>
+    			<td class="vertical"></td>
+    			<td></td>
+    		</tr>
+    		<tr>
+    			<td class="horizontal"></td>
+    			<td class="horizontal vertical"></td>
+    			<td class="horizontal"></td>
+    		</tr>
+    		<tr>
+    			<td></td>
+    			<td class="vertical"></td>
+    			<td></td>
+    		</tr>
+        </table>
+    </div>
+</div>	
 
 </body>
 </html>
