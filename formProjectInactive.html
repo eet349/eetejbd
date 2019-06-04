@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Forms Project</title>
+<!-- 	bootstrap 4 cdn reference -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="galleryGrid.css">
+</head>
+<body>
+
+<!-- beginning of navbar code -->
+	<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+	  <a class="navbar-brand" href="http://www.eetejbd.best/index.html"> <i class="fas fa-bed"></i> EETEJBD</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item dropdown active">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+	          <a class="dropdown-item" href="http://www.eetejbd.best/codeCopy.html">Things I've Learned</a>
+	          <a class="dropdown-item" href="http://www.eetejbd.best/recreate.html">Rusty Steele</a>
+	          <a class="dropdown-item" href="http://www.eetejbd.best/table.html">Tables!</a>
+	          <a class="dropdown-item" href="http://www.eetejbd.best/pokemonTable.html">Pokemon Chart</a>
+	          <a class="dropdown-item" href="http://www.eetejbd.best/inputs.html">Inputs!</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="http://www.eetejbd.best/cssIntro.html">CSS Intro</a>
+	          <a class="dropdown-item" href="http://www.eetejbd.best/cssBlog.html">CSS Blog</a>
+	          <a class="dropdown-item" href="http://www.eetejbd.best/ticTacToe.html">Tic Tac Toe</a>
+	          <a class="dropdown-item" href="http://www.eetejbd.best/photogrid.html">Photo Gallery</a>
+	          <a class="dropdown-item" href="http://www.eetejbd.best/galleryGrid.html">Image Gallery</a>
+	        </div>
+	      </li>
+	   	</ul>
+	    <ul class="navbar-nav mr-1">
+		 <li><a class="nav-link" href="http://www.eetejbd.best/forms.html">Login  <i class="fas fa-user"></i></a></li>
+		     	<li><a class="nav-link" href="http://www.eetejbd.best/formProject.html">Register  <i class="fas fa-user-plus"></i></a></li></ul>
+	  </div>
+	</nav>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+<!-- end of navbar code -->
+  
+    <div class="container">
+        <div class="jumbotron">
+    
+<h1>Register</h1>
+<form>
+	<div>
+	<label for="fName">First Name:</label>
+	<input type="text" name="firstName" id="fName" required placeholder="John">
+	<label for="lName">Last Name:</label>
+	<input type="text" name="lastName" id="lName" required placeholder="Smith">
+	</div>
+	<div>
+	<label for="male">Male</label>
+	<input type="radio" name="gender" id="male">
+	<label for="female">Female</label>
+	<input type="radio" name="gender" id="female">
+	<label for="other">Other</label>
+	<input type="radio" name="gener" id="other">
+	</div>
+	<div>
+	<label for="email">Email:</label>
+	<input type="email" name="email" id="email" required placeholder="email@sample.com">
+	<label for="password">Password:</label>
+	<!-- <input type="password" name="password" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{5,10}$" required placeholder="password"> -->
+	<input type="password" name="password" id="password" pattern=".{5,10}" required  title="Password must be between 5 and 10 characters" placeholder="password">
+	</div>
+	<div>
+	<label for="birthday">
+		Birthday:
+	<select name="month">
+		<option>Month</option>
+		<option>January</option>
+		<option>February</option>
+		<option>March</option>
+		<option>April</option>
+		<option>May</option>
+		<option>June</option>
+		<option>July</option>
+		<option>August</option>
+		<option>September</option>
+		<option>October</option>
+		<option>November</option>
+		<option>December</option>
+	</select>
+	<select name="day">
+		<option>Day</option>
+		<option>1</option>
+		<option>2</option>
+		<option>3</option>
+		<option>4</option>
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option>8</option>
+		<option>9</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option>
+		<option>13</option>
+		<option>14</option>
+		<option>15</option>
+		<option>16</option>
+		<option>17</option>
+		<option>18</option>
+		<option>19</option>
+		<option>20</option>
+		<option>21</option>
+		<option>22</option>
+		<option>23</option>
+		<option>24</option>
+		<option>25</option>
+		<option>26</option>
+		<option>27</option>
+		<option>28</option>
+		<option>29</option>
+		<option>30</option>
+		<option>31</option>
+	</select>
+	<select name="year"> <!-- Years 1960-2019 -->
+		<option>Year</option>
+		<option>2019</option>
+		<option>2018</option>
+		<option>2017</option>
+		<option>2016</option>
+		<option>2015</option>
+		<option>2014</option>
+		<option>2013</option>
+		<option>2012</option>
+		<option>2011</option>
+		<option>2010</option>
+		<option>2009</option>
+		<option>2008</option>
+		<option>2007</option>
+		<option>2006</option>
+		<option>2005</option>
+		<option>2004</option>
+		<option>2003</option>
+		<option>2002</option>
+		<option>2001</option>
+		<option>2000</option>
+		<option>1999</option>
+		<option>1998</option>
+		<option>1997</option>
+		<option>1996</option>
+		<option>1995</option>
+		<option>1994</option>
+		<option>1993</option>
+		<option>1992</option>
+		<option>1991</option>
+		<option>1990</option>
+		<option>1989</option>
+		<option>1988</option>
+		<option>1987</option>
+		<option>1986</option>
+		<option>1985</option>
+		<option>1984</option>
+		<option>1983</option>
+		<option>1982</option>
+		<option>1981</option>
+		<option>1980</option>
+		<option>1979</option>
+		<option>1978</option>
+		<option>1977</option>
+		<option>1976</option>
+		<option>1975</option>
+		<option>1974</option>
+		<option>1973</option>
+		<option>1972</option>
+		<option>1971</option>
+		<option>1970</option>
+		<option>1969</option>
+		<option>1968</option>
+		<option>1967</option>
+		<option>1966</option>
+		<option>1965</option>
+		<option>1964</option>
+		<option>1963</option>
+		<option>1962</option>
+		<option>1961</option>
+		<option>1960</option>
+	</select>
+	
+	</label></div>
+	<div>
+	<label for="agree">I agree to the term and conditions</label>
+	<input type="checkbox" name="agree" id="agree" required>
+	</div>
+	<button type="submit">Submit</button>
+</form>
+</div>
+</div>
+</body>
+</html>
